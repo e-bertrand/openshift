@@ -26,6 +26,7 @@ app.get('/usuarios/:id', (req, res, next) => {
   }
 });
 
-const server = app.listen(8888, function() {
+const PORT = process.env.PORT || 8888;
+const server = app.listen(PORT, function() {
   console.log('Servidor iniciado..');
 });
